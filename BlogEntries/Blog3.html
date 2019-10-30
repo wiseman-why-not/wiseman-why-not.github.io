@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cast a double to an int explained!</title>
+    <link rel="stylesheet" href="BlogMainPage.css" type="text/css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Topic</h1>
+      <h3>Cast a double to an int</h3>
+    </div>
+    <div class="explaination">
+      <h4>What is "cast a double to an int"</h4>
+      <p>Cast a double to an int can better be said as convert a double to and integer.</p>
+      <p>What is casting? Casting is taking an Object of specific type and making
+        it into another Object type. Converting a numberic value from one type to another type.
+      </p>
+      <p>Casing is a process of converting one type to another, but in Java,
+         types from teh same type hierarchy can be cast or converted into each other.
+         If you try to cast two objects which don't share the same type hierarchy,
+         i.e there is no parent-child relationshiop between them. You will get a
+         complie time error.
+      </p>
+      <h4>Why cast a double to an int</h4>
+      <p>You could be dealing with a method that returns a double, but you might
+        not want the numbers after the decimal or need to change it to an int so
+        you can use it with another method that uses int values. Casting a double
+        to and int will remove the numbers after the decimal, it will not round up.
+      </p>
+      <h4>What does it look like</h4>
+      <p>double myDoubleNumber = 45.12;</p>
+      <p>int myIntNumber = (int)myDoubleNumber;</p>
+      <p>myIntNumber = 45</p>
+      <br>
+      <p>Double myDoubleNumber = 45.12;</p>
+      <p>int myIntNumber = Integer.valueOf(myDoubleNumber.intValue() );</p>
+      <p>myIntNumber = 45</p>
+      <h4>How is this happening?</h4>
+      <p>
+        double and int are primitive data types that start with a lowercase character.
+        Double and Integers are numeric classes, which makes it possible to use them
+        like objects and using methods on method like inValue() or valueOf().
+      </p>
+
+    </div>
+
+  </body>
+</html>
